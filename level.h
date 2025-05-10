@@ -1,5 +1,6 @@
 #pragma once
 #include  <Vector>
+#include  "Vector2D.h"
 #include "SDL2/SDL.h"
 #include  "Tile.h"
 class level
@@ -9,6 +10,9 @@ public :
 	void Draw(SDL_Renderer* render, int tilesize);
 	void setTileTypeIDSelected(int setTileTypeSelected);
 	void placeTileTypeIDSelected(int x, int y);
+	void drawShadows(SDL_Renderer* renderer , int tileSize);
+	bool checkIfTileOkForPlant(int x, int y, bool growsOnWetDirt);
+	bool checkIfTileOkForAnimal(Vector2D posCheck, float radiusCheck);
 
 private:
 	

@@ -18,7 +18,7 @@ int main(int argc, char* args[]) {
 	}
 	else {
 		//Create the window.
-		std::string windowTitle = "Alien Farming Game";
+		std::string windowTitle = "Farming Game";
 		SDL_Window* window = nullptr;
 		if (fullscreen)
 			window = SDL_CreateWindow(windowTitle.c_str(), 0, 0, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP);
